@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.onload = function(){
     // 비주얼이동버튼 스크롤 기능
     const button = document.querySelector(".visual-bt");
@@ -16,9 +15,6 @@ window.onload = function(){
             section.scrollIntoView({behavior:"smooth"});
         }
     }
-=======
-window.onload =function(){
->>>>>>> a6283749c45bc1258993a578068e061b77203abd
     // top 버튼 스크롤 기능
     const topBtn = document.getElementById("top-btn");
     topBtn.addEventListener("click",function(event){
@@ -35,11 +31,7 @@ window.onload =function(){
                 behavior:"smooth",
             });
         }
-<<<<<<< HEAD
     });
-=======
-    })
->>>>>>> a6283749c45bc1258993a578068e061b77203abd
     
     // 화살표 이미지 회전
     const topBtnImg = document.getElementById("top-btn-img");
@@ -51,7 +43,6 @@ window.onload =function(){
         else{
             topBtnImg.classList.remove("up");
         }
-<<<<<<< HEAD
     });
     
     // 안내창 스크립트
@@ -61,7 +52,3 @@ window.onload =function(){
         fadeOut(modal);
     });
 };
-=======
-    })
-}
->>>>>>> a6283749c45bc1258993a578068e061b77203abd
