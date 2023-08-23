@@ -16,6 +16,10 @@
     
     <!-- css초기화 -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- normalize.css 와 reset.css가 있는데 
+        reset.css보다 normalize.css가 더 세부적으로 초기화 시켜줌  -->
+
+    <!-- css 적용 -->
     <link rel="stylesheet" href="css/main.css">
     
     <!-- favicon -->
@@ -27,8 +31,12 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     
-    <!-- IE 9 이하는 HTML5 태그를 지원하지 않는다. -->
-    <script src="js/html5shiv.js"></script>
+    <!-- IE 6~8 버전에서 미디어쿼리를 해석할 수 있도록 만들어줌 -->
+    <!-- <script src="js/respond.min.js"></script> -->
+
+    <!--[if lt IE 9]> -->
+    <!-- <script src="js/html5shiv.js"></script> -->
+    <!-- <![endif] -->
     
     <!-- CSS3 적용 -->
     <script src="js/prefixfree.min.js"></script>
@@ -151,19 +159,9 @@
             <span class="visual-txt">
                 세계최고를 향해 STX건설이 힘차게 질주합니다!
             </span>
-            <!-- 버튼 클릭 시 원하는 곳으로 이동하는 태그(html) -->
             <button class="visual-bt">버튼</button>
         </div>
     </section>
-    <!-- 버튼 클릭 시 원하는 곳으로 이동하는 태그(script)
-    <script>
-        function scrollToSection(sectionId){
-            const section = document.querySelector(sectionId);
-            if(section){
-                section.scrollIntoView({behavior:"smooth"})
-            }
-        }
-    </script> -->
 
     <!-- 비지니스 -->
     <section class="business" id="business">
@@ -345,8 +343,19 @@
             </div>
         </div>
     </footer>
+
     <!-- 밑에서 위로 올려주는 태그(html) -->
     <!--<button><span class="topBtn" onclick="window.scrollTo(0,0);">Top</span></button>-->
+    
+    <!-- 버튼 클릭 시 원하는 곳으로 이동하는 태그(script)
+    <script>
+        function scrollToSection(sectionId){
+            const section = document.querySelector(sectionId);
+            if(section){
+                section.scrollIntoView({behavior:"smooth"})
+            }
+        }
+    </script> -->
 </div>
 </body>
 </html>

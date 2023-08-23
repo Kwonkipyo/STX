@@ -527,7 +527,6 @@ body.active{
   width: calc(50% - 1px);
   height: 200px;
   padding: 50px 60px;
-  background-color: 
 }
 .cs-inner > .cs-link:first-child{
   float: left;
