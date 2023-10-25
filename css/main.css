@@ -64,8 +64,9 @@ body.active{
   height: 400px;
   border-radius: 20px;
   position: absolute;
-  top: 250px;
-  left: 700px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   color: #222;
 }
 .modal-logo img{
